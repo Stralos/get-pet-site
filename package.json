@@ -1,12 +1,12 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "name": "get-pet-site",
+  "description": "A static site for GetPet using gatsby",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "lint": "eslint --ext .jsx,.js src/",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve"
@@ -26,13 +26,12 @@
     "eslint-plugin-react": "^7.13.0",
     "gatsby-plugin-eslint": "^2.0.5",
     "gatsby-plugin-root-import": "^2.0.5",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
     "prettier": "^1.17.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Stralos/get-pet-site"
   }
 }
