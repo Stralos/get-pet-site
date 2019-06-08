@@ -1,6 +1,6 @@
 import React from 'react';
-import NavigationBar from 'src/components/NavigationBar';
-import style from './header.module.css';
+import NavigationBar from './NavigationBar';
+import style from './header.module.scss';
 
 export default class Header extends React.PureComponent {
   render() {

@@ -1,12 +1,11 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
   plugins: [
     'gatsby-plugin-eslint',
-    'gatsby-plugin-root-import',
+    'gatsby-plugin-root-import', {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        includePaths: ['src/styles'],
+      },
+    },
   ],
 };

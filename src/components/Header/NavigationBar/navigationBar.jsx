@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './navigationBar.module.css';
+import style from './navigationBar.module.scss';
 
 export default class NavigationBar extends React.PureComponent {
   render() {
