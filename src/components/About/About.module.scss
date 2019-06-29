@@ -16,9 +16,11 @@
 }
 
 .instructionList {
-
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 
 .instruction {
-  
+  margin: 0 15px;
 }

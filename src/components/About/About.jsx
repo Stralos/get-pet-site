@@ -6,6 +6,8 @@ import vggnLogo from 'src/assets/vggn-logo.png';
 import GetToKnow from './GetToKnow';
 import style from './About.module.scss';
 
+const Loren = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+
 export default class About extends React.PureComponent {
   render() {
     return (
@@ -13,13 +15,13 @@ export default class About extends React.PureComponent {
         <div>
           <ul className={style.instructionList}>
             <li className={style.instruction}>
-              <GetToKnow />
+              <GetToKnow icon="Icon" header="Surask" text={Loren} />
             </li>
             <li className={style.instruction}>
-              <GetToKnow />
+              <GetToKnow icon="Icon" header="Pažink" text={Loren} />
             </li>
             <li className={style.instruction}>
-              <GetToKnow />
+              <GetToKnow icon="Icon" header="Augink" text={Loren} />
             </li>
           </ul>
 

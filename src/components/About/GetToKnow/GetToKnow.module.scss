@@ -1,0 +1,25 @@
+@import 'variables';
+
+.icon {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.header {
+  color: $color-red;
+  text-transform: uppercase;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  justify-content: center;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+.text { 
+  color: $color-red;
+  text-align: center;
+  display: inline-block;
+}
