@@ -1,0 +1,21 @@
+@import 'variables';
+
+.faq {
+  margin: 0 50px;
+}
+
+.questions {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+}
+
+.question {
+  padding: 5px 0;
+  border-top: 2px solid $color-red;
+  &+.question {
+    border-bottom: 2px solid $color-red;
+  }
+  width: 100%;
+}
