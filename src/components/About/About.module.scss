@@ -1,0 +1,24 @@
+.images {
+  height: 70px;
+}
+
+.shelters {
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+
+  .shelter {
+    margin: 0 45px;
+  }
+}
+
+.instructionList {
+
+}
+
+.instruction {
+  
+}

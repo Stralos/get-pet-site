@@ -4,7 +4,7 @@ import style from './stats.module.scss';
 export default class Stats extends React.PureComponent {
   render() {
     return (
-      <div className={style.stats}>
+      <div id="apie" className={style.stats}>
         I am stats
       </div>
     );

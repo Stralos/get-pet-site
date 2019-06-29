@@ -1,3 +1,12 @@
 .navigationBar {
   color: white;
 }
+
+.link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  &+.link {
+    margin-left: 10px;
+  }
+}
