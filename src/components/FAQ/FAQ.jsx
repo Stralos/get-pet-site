@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionHeader from 'src/components/common/SectionHeader';
 import Question from './Question';
 import style from './FAQ.module.scss';
 
@@ -6,7 +7,8 @@ export default class FAQ extends React.PureComponent {
   render() {
     return (
       <div className={style.faq}>
-        D.U.K.
+        <SectionHeader head="D.U.K." />
+
 
         <ul className={style.questions}>
           <li className={style.question}>
