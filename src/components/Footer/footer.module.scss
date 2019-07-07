@@ -1,4 +1,31 @@
 @import 'variables';
 .footer {
   background-color:  $color-black;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 24px 0;
+
+  @media screen and (max-width: $break-point-mobile) {
+    flex-direction: column;
+  }
+}
+
+
+.section {
+  margin: 0 24px;
+  &:first-child, &:last-child {
+    flex: 2;
+  }
+  flex: 1;
+}
+
+.sectionHead {
+  color: white;
+  font-size: 24px;
+}
+
+.content {
+  color: white;
+  font-size: 14px;
 }

@@ -2,4 +2,27 @@
 
 .stats {
   background-color: $color-grey;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+  margin: 0;
+}
+
+.stat {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  .number {
+    font-size: 40px;
+    font-weight: 900;
+    padding-bottom: 14px;
+  }
+  .text {
+    color: $color-red;
+    font-size: 14px;
+    font-weight: 700;
+  }
 }
