@@ -25,18 +25,22 @@
   color: $color-red;
   display: flex;
   align-items: center;
+  font-weight: 600;
+  padding: 0;
 }
 
-.iconPlaceHolder {
-  margin-right: 15px; 
-  height: 20px;
-  width: 20px;
-}
+.arrowButton {
+  margin-right: 20px;
+  border-radius: 3px;
+  padding: 4px 4px 6px 4px;
+  border: 2px solid $color-red;
 
-.iconOpen {
-  background-color: red;
-}
-
-.iconClosed {
-  background-color: black;
+  &.isOpen {
+    background-color: $color-red;
+    fill: white;
+    transform: rotate(180deg);  
+  }
+  &.isClosed {
+    fill: $color-red;  
+  }
 }

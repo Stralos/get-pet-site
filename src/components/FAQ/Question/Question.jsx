@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import cn from 'classnames';
+import classnames from 'classnames';
+import Arrow from 'src/assets/icons/Arrow';
 import style from './Question.module.scss';
 
 export default class Question extends React.PureComponent {
@@ -42,7 +43,9 @@ export default class Question extends React.PureComponent {
     return (
       <div className={style.container}>
         <button className={style.button} onClick={this.onClick} type="button">
-          <span className={cn(style.iconPlaceHolder, isOpen ? style.iconOpen : style.iconClosed)} />
+          <Arrow
+            className={classnames(style.arrowButton, isOpen ? style.isOpen : style.isClosed)}
+          />
           {head}
         </button>
         {isOpen && this.renderContent()}
