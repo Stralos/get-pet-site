@@ -5,12 +5,14 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 0;
+  max-width: $content-max-width;
+  margin: 0 auto;
 }
 .teamMember {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 190px;
+  width: 190px;
   padding: 10px;
 }
 .bubble {
@@ -20,5 +22,14 @@
   border-radius: 50%;
 }
 .description {
+  margin-top: 5px;
   text-align: center;
+  font-size: 14px;
+  color: $color-red;
+  font-family: $font-roboto;
+}
+.name {
+  margin-top: 20px;
+  font-weight: 600;
+  font-family: $font-raleway;
 }

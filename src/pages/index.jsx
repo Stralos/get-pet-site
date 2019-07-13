@@ -7,6 +7,7 @@ import FAQ from 'src/components/FAQ';
 import Footer from 'src/components/Footer';
 import Team from 'src/components/Team';
 import Sponsors from 'src/components/Sponsors';
+import News from 'src/components/News';
 
 export default () => (
   <div>
@@ -14,6 +15,7 @@ export default () => (
     <GetApp />
     <About />
     <Team />
+    <News />
     <FAQ />
     <Sponsors />
     <Stats />
