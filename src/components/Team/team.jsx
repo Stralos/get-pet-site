@@ -1,7 +1,6 @@
 import React from 'react';
 import Proptypes from 'prop-types';
-import SectionHeader from 'src/components/common/SectionHeader';
-import SubHeader from 'src/components/common/SubHeader';
+import SectionHeader from 'src/components/common/molecules/SectionHeader';
 import style from './team.module.scss';
 
 const TeamMember = ({ name, description }) => (
@@ -24,8 +23,10 @@ export default class Team extends React.PureComponent {
   render() {
     return (
       <div>
-        <SectionHeader head="GET PET KOMANDA" />
-        <SubHeader head="Susipažinkite su GetPet komanda" />
+        <SectionHeader
+          head="GET PET KOMANDA"
+          subHead="Susipažinkite su GetPet komanda"
+        />
         <ul className={style.teamMemberList} id="apie">
           <TeamMember name="Rūta" description={'VšĮ "Augink mane" vadovė, Mentorystės koordinaviams, Rinkodara, Teisė'} />
           <TeamMember name="Karolis" description="Programavimas, Projekto koordinavimas" />

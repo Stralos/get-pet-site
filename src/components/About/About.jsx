@@ -1,5 +1,5 @@
 import React from 'react';
-import SubHeader from 'src/components/common/SubHeader';
+import MiniText from 'src/components/common/atoms/MiniText';
 import leseLogo from 'src/assets/lese-logo.png';
 import Phone from 'src/assets/Phone.png';
 import PuppyQuestion from 'src/assets/Puppy-question.png';
@@ -41,7 +41,7 @@ export default class About extends React.PureComponent {
             </li>
           </ul>
 
-          <SubHeader head="Gyvūnų prieglaudos:" />
+          <MiniText text="Gyvūnų prieglaudos:" />
           <ul className={style.shelters}>
             <li className={style.shelter}>
               <img className={style.images} src={sosGyvunaiLogo} alt="S.O.S. gyvunai" />

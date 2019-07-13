@@ -1,8 +1,9 @@
 @import 'variables';
-
 .header {
   display:flex;
   justify-content: center;
   font-size: 28px;
+  margin-top: 40px;
   font-family: $font-roboto;
+  margin-bottom: 6px;
 }

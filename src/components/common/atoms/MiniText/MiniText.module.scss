@@ -1,9 +1,10 @@
 @import 'variables';
-.subHeader {
+.text {
   color: $color-font-grey;
   font-weight: 300;
   display: flex;
   justify-content: center;
   width: 100%;
   font-size: 14px;
+  margin-top: 6px;
 }
