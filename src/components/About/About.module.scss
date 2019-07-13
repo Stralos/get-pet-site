@@ -1,3 +1,4 @@
+@import 'variables';
 .images {
   height: 70px;
 }
@@ -23,4 +24,23 @@
 
 .instruction {
   margin: 0 15px;
+}
+.icon {
+  height: 80px;
+  fill: $color-red;
+}
+
+.puppyQuestion {
+  height: 175px;
+  fill: $color-red;
+}
+
+.puppyWiggle {
+  height: 128px;
+  fill: $color-red;
+}
+
+.phone {
+  height: 128px;
+  fill: $color-red;
 }
