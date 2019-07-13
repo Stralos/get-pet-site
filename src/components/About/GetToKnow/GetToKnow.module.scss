@@ -16,10 +16,14 @@
   justify-content: center;
   margin-bottom: 8px;
   margin-top: 16px;
+  font-family: $font-roboto;
 }
 
-.text { 
+.text {
+  font-family: $font-roboto;
   color: $color-red;
+  font-size: 14px;
+  line-height: 15pt;
   text-align: center;
   display: inline-block;
 }

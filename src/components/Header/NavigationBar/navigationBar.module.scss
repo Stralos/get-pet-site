@@ -1,12 +1,15 @@
+@import 'variables';
 .navigationBar {
   color: white;
 }
 
 .link {
+  font-family: $font-roboto;
+  font-size: 14px;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   &+.link {
-    margin-left: 10px;
+    margin-left: 16px;
   }
 }

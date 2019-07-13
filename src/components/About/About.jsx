@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PureComponent, Fragment } from 'react';
 import MiniText from 'src/components/common/atoms/MiniText';
 import leseLogo from 'src/assets/lese-logo.png';
 import PuppyQuestion from 'src/assets/icons/PuppyQuestion';
@@ -12,10 +12,10 @@ import style from './About.module.scss';
 
 const Loren = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
-export default class About extends React.PureComponent {
+export default class About extends PureComponent {
   render() {
     return (
-      <div>
+      <Fragment>
         <ul className={style.instructionList}>
           <li className={style.instruction}>
             <GetToKnow
@@ -52,7 +52,7 @@ export default class About extends React.PureComponent {
             <img className={style.images} src={vggnLogo} alt="Vilniaus Gyvunu Globos Namai" />
           </li>
         </ul>
-      </div>
+      </Fragment>
     );
   }
 }

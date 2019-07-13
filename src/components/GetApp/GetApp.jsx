@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { PureComponent, Fragment } from 'react';
 import dogoLogo from 'src/assets/dogo.png';
 import style from './GetApp.module.scss';
 
-export default class GetApp extends React.PureComponent {
+export default class GetApp extends PureComponent {
   render() {
     return (
-      <div>
+      <Fragment>
         <img className={style.image} src={dogoLogo} alt="pic" />
-      </div>
+      </Fragment>
     );
   }
 }

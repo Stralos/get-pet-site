@@ -1,11 +1,10 @@
 @import 'variables';
-
 .stats {
   background-color: $color-grey;
   list-style-type: none;
   display: flex;
   justify-content: space-around;
-  padding: 40px 0;
+  padding: 40px $padding-distance;
   margin: 0;
 }
 

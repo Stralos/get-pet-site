@@ -22,7 +22,7 @@ export default class GetToKnow extends React.PureComponent {
 }
 
 GetToKnow.propTypes = {
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.element.isRequired,
   header: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };

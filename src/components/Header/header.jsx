@@ -7,7 +7,7 @@ export default class Header extends React.PureComponent {
   render() {
     return (
       <div className={style.header}>
-        <Logo />
+        <Logo className={style.logo} />
         <NavigationBar />
       </div>
     );
