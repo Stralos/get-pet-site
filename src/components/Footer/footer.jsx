@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { Fragment, PureComponent } from 'react';
 import Proptypes from 'prop-types';
+import Facebook from 'src/assets/icons/Facebook';
+import Instagram from 'src/assets/icons/Instagram';
+import LinkedIn from 'src/assets/icons/LinkedIn';
 import style from './footer.module.scss';
 
 const Section = ({ head, content }) => (
@@ -22,13 +25,37 @@ Section.propTypes = {
 
 const text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 
-export default class Footer extends React.PureComponent {
+export default class Footer extends PureComponent {
   render() {
     return (
       <footer className={style.footer}>
         <Section head="APIE GETPET" content={text} />
         <Section head="KONTAKTAI" content="labas@getpet.lt" />
-        <Section head="SOCIALINIAI TINKLAI" content="GetPet rasite:" />
+        <Section
+          head="SOCIALINIAI TINKLAI"
+          content={(
+            <Fragment>
+              <p> GetPet rasite:</p>
+              <ul className={style.socialMediaList}>
+                <li>
+                  <a className={style.socialMediaLink} href="www.google.com">
+                    <Facebook className={style.socialMediaIcon} />
+                  </a>
+                </li>
+                <li>
+                  <a className={style.socialMediaLink} href="www.google.com">
+                    <Instagram className={style.socialMediaIcon} />
+                  </a>
+                </li>
+                <li>
+                  <a className={style.socialMediaLink} href="www.google.com">
+                    <LinkedIn className={style.socialMediaIcon} />
+                  </a>
+                </li>
+              </ul>
+            </Fragment>
+          )}
+        />
       </footer>
     );
   }
