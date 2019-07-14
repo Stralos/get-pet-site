@@ -29,33 +29,35 @@ export default class Footer extends PureComponent {
   render() {
     return (
       <footer className={style.footer}>
-        <Section head="APIE GETPET" content={text} />
-        <Section head="KONTAKTAI" content="labas@getpet.lt" />
-        <Section
-          head="SOCIALINIAI TINKLAI"
-          content={(
-            <Fragment>
-              <p> GetPet rasite:</p>
-              <ul className={style.socialMediaList}>
-                <li>
-                  <a className={style.socialMediaLink} href="https://www.facebook.com/getpet.lt/">
-                    <Facebook className={style.socialMediaIcon} />
-                  </a>
-                </li>
-                <li>
-                  <a className={style.socialMediaLink} href="https://www.instagram.com/getpet.lt/">
-                    <Instagram className={style.socialMediaIcon} />
-                  </a>
-                </li>
-                <li>
-                  <a className={style.socialMediaLink} href="https://www.linkedin.com/company/getpet/">
-                    <LinkedIn className={style.socialMediaIcon} />
-                  </a>
-                </li>
-              </ul>
-            </Fragment>
-          )}
-        />
+        <div className={style.footerContent}>
+          <Section head="APIE GETPET" content={text} />
+          <Section head="KONTAKTAI" content="labas@getpet.lt" />
+          <Section
+            head="SOCIALINIAI TINKLAI"
+            content={(
+              <Fragment>
+                <p> GetPet rasite:</p>
+                <ul className={style.socialMediaList}>
+                  <li>
+                    <a className={style.socialMediaLink} href="https://www.facebook.com/getpet.lt/">
+                      <Facebook className={style.socialMediaIcon} />
+                    </a>
+                  </li>
+                  <li>
+                    <a className={style.socialMediaLink} href="https://www.instagram.com/getpet.lt/">
+                      <Instagram className={style.socialMediaIcon} />
+                    </a>
+                  </li>
+                  <li>
+                    <a className={style.socialMediaLink} href="https://www.linkedin.com/company/getpet/">
+                      <LinkedIn className={style.socialMediaIcon} />
+                    </a>
+                  </li>
+                </ul>
+              </Fragment>
+            )}
+          />
+        </div>
       </footer>
     );
   }

@@ -1,10 +1,16 @@
 @import 'variables';
 .footer {
   background-color:  $color-black;
+}
+
+.footerContent {
+  background-color:  $color-black;
   display: flex;
   justify-content: space-around;
   color: white;
   padding: 24px 0;
+  max-width: 1050px;
+  margin: 0 auto;
 
   @media screen and (max-width: $break-point-mobile) {
     flex-direction: column;
