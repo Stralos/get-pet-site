@@ -13,10 +13,10 @@ export default class News extends PureComponent {
           head="NAUJIENAS galite sekti mūsų Facebook ir Instagram"
         />
         <div className={style.actions}>
-          <a className={style.link} href="www.google.com">
+          <a className={style.link} href="https://www.facebook.com/getpet.lt/">
             <Facebook className={style.facebookIcon} />
           </a>
-          <a className={style.link} href="www.google.com">
+          <a className={style.link} href="https://www.instagram.com/getpet.lt/">
             <Instagram className={style.facebookIcon} />
           </a>
         </div>

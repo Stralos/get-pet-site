@@ -11,6 +11,11 @@
 }
 
 .questions {
+  @media screen and (max-width: $break-point-mobile) {
+    margin: 0;
+  }
+  max-width: 1050px;
+  margin: 0 auto;
   display: flex;
   list-style: none;
   padding: 0;

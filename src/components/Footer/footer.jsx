@@ -38,17 +38,17 @@ export default class Footer extends PureComponent {
               <p> GetPet rasite:</p>
               <ul className={style.socialMediaList}>
                 <li>
-                  <a className={style.socialMediaLink} href="www.google.com">
+                  <a className={style.socialMediaLink} href="https://www.facebook.com/getpet.lt/">
                     <Facebook className={style.socialMediaIcon} />
                   </a>
                 </li>
                 <li>
-                  <a className={style.socialMediaLink} href="www.google.com">
+                  <a className={style.socialMediaLink} href="https://www.instagram.com/getpet.lt/">
                     <Instagram className={style.socialMediaIcon} />
                   </a>
                 </li>
                 <li>
-                  <a className={style.socialMediaLink} href="www.google.com">
+                  <a className={style.socialMediaLink} href="https://www.linkedin.com/company/getpet/">
                     <LinkedIn className={style.socialMediaIcon} />
                   </a>
                 </li>

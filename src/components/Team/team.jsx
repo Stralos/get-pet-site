@@ -3,9 +3,11 @@ import Proptypes from 'prop-types';
 import SectionHeader from 'src/components/common/molecules/SectionHeader';
 import style from './team.module.scss';
 
-const TeamMember = ({ name, description }) => (
+const TeamMember = ({ name, description, showPic }) => (
   <li className={style.teamMember}>
-    <div className={style.bubble} />
+    {showPic && (
+      <div className={style.bubble} />
+    )}
     <div className={style.name}>
       {name}
     </div>
@@ -15,9 +17,14 @@ const TeamMember = ({ name, description }) => (
   </li>
 );
 TeamMember.propTypes = {
+  showPic: Proptypes.bool,
   name: Proptypes.string.isRequired,
   description: Proptypes.string.isRequired,
 };
+TeamMember.defaultProps = {
+  showPic: true,
+};
+
 
 export default class Team extends PureComponent {
   render() {
@@ -38,6 +45,11 @@ export default class Team extends PureComponent {
           <TeamMember name="Vaidas" description="Rinkodara, Ryšiai su visuomine" />
           <TeamMember name="Andrius" description="Rinkodara, Ryšiai su visuomine" />
           <TeamMember name="Tu" description="Laukiam tavęs prisijungiant!" />
+        </ul>
+        <h4 className={style.volunteers}> GET PET SAVANORIAI </h4>
+        <ul className={style.teamMemberList}>
+          <TeamMember showPic={false} name="Evelina" description="Fotografija" />
+          <TeamMember showPic={false} name="Aistė" description="Fotografija" />
         </ul>
       </Fragment>
     );
