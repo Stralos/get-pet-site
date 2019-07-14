@@ -1,4 +1,25 @@
+@import 'variables';
 .sponsors {
   list-style-type: none;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin-top: 30px;
+  @media screen and (max-width: $break-point-mobile) {
+    padding: 0 40px;
+    flex-wrap: wrap;
+  }
+}
+
+.sponsor {
+  @media screen and (max-width: $break-point-mobile) {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 10px 0;
+  }
+  @media screen and (max-width: $break-pont-small-mobile) {
+    width: 100%;
+  }
 }

@@ -6,6 +6,10 @@
   justify-content: space-around;
   padding: 40px $padding-distance;
   margin: 0;
+  @media screen and (max-width: $break-point-mobile) {
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
 }
 
 .stat {
@@ -13,7 +17,9 @@
   align-content: center;
   flex-direction: column;
   text-align: center;
-
+  @media screen and (max-width: $break-pont-small-mobile) {
+    width: 50%;
+  }
   .number {
     font-size: 40px;
     font-weight: 900;

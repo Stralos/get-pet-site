@@ -22,9 +22,9 @@ export default class Stats extends React.PureComponent {
     return (
       <ul id="apie" className={style.stats}>
         <Stat stat={1000} text="Parsisiuntimu" />
-        <Stat stat={2019} text="Parsisiuntimu" />
-        <Stat stat={777} text="Parsisiuntimu" />
-        <Stat stat={999} text="Parsisiuntimu" />
+        <Stat stat={2019} text="Startas" />
+        <Stat stat={777} text="Rado namus" />
+        <Stat stat={999} text="Ieško namų" />
       </ul>
     );
   }
