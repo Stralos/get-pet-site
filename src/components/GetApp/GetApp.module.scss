@@ -8,4 +8,24 @@
   @media screen and (max-width: $break-pont-small-mobile) {
     height: 190px;
   }
+  position: relative;
+}
+
+.links {
+  right: 20%;
+  top: 30%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.googleLink {
+  img {
+    height: 60px;
+  }
+}
+
+.iosLink {
+  img {
+    height: 60px;
+  }
 }

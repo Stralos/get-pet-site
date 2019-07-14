@@ -24,9 +24,9 @@
 
 .question {
   padding: 5px 0;
-  border-top: 2px solid $color-red;
-  &+.question {
-    border-bottom: 2px solid $color-red;
+  &:first-child {
+    border-top: 2px solid $color-red;
   }
+  border-bottom: 2px solid $color-red;
   width: 100%;
 }
