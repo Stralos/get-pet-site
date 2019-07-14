@@ -3,4 +3,38 @@
   background-color: $color-red;
   color: white;
   padding: 15px 0;
+  margin-bottom: 0;
+}
+
+.actions {
+  height: 390px;
+  background-image: url('../../assets/dog-pawn.png');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  @media screen and (max-width: $break-pont-small-mobile) {
+    height: 190px;
+  }
+}
+
+.link {
+  width: 50%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: $color-red;
+    opacity: 0.3;
+  }
+}
+
+.facebookIcon {
+  border-radius: 25px;
+  padding: 50px 80px;
+  box-sizing: border-box;
+  height: 220px;
+  background-color: $color-red;
+  fill: white;
 }
